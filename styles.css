@@ -1,69 +1,112 @@
+html,
+body {
+    overflow: auto;
+}
+
 body {
     font-family: "avenir";
-    color: #111111;
-    background-color: #eeeeee;
+    color: #fff;
+    background-color: #001021;
+    margin: 0;
 }
 
 h1 {
-    font-size: 5vw; 
+    font-size: min(calc(1.85vw + 1.85vh + 0.95vmin), 3em);
     text-align: center;
-    font-weight: 300;
+    font-weight: 270;
 }
 
 h2 {
-    font-size: 3vw; 
+    font-size: min(calc(1.66vw + 1.66vh + 0.85vmin), 2.66em);
     text-align: center;
     font-weight: 200;
-    padding-top: 2vw;
 }
 
 h3 {
-    font-size: 2.5vw; 
+    font-size: min(calc(1.33vw + 1.33vh + 0.66vmin), 2.33em);
     text-align: center;
-    font-weight: 100;
-    padding-top: 2vw;
+    font-weight: 130;
+}
+
+#can {
+    position: absolute;
+    z-index: -1;
 }
 
 .block {
-    padding-left: 3vw; 
-    padding-right: 3vw; 
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+.withSpaceAfter {
+    margin-bottom: 5vh;
 }
 
 p {
-    font-size: 2vw; 
+    font-size: min(calc(1.15vw + 1.15vh + 0.5vmin), 1.5em);
     text-align: center;
     text-align: left;
     line-height: 160%;
+    width: auto;
+    text-align-last: center;
+}
+
+.aligning-text {
+    font-size: min(calc(1.15vw + 1.15vh + 0.5vmin), 1.5em);
+    line-height: 160%;
+    text-align: left;
+    display: inline-block;
+}
+
+.aligning-text span:hover {
+    background-color: #001021;
 }
 
 a {
-    color: #1b1bc7;
+    color: #36A3FC;
+    font-weight: 200;
+    background-color: #001021;
     text-decoration: none;
-    font-size: 2vw; 
-    
 }
 
-.center {
-    text-align: center;
+a:hover {
+    color: #84BAE6;
+    text-decoration: underline;
+}
+
+.links {
+    font-size: min(calc(1.25vw + 1.25vh + 0.65vmin), 1.75em);
+    margin-top: 10vh;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .column {
-    float: left;
-    width: 33.33%;
+    flex: 33%;
+    max-width: 33%;
+    text-align: center;
 }
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+
+@media (max-width: 950px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+        margin-bottom: 4vh;
+    }
 }
 
 @font-face {
     font-family: "avenir";
-    src: url("fonts/AvenirLTStd-Light.eot"); /* IE9 Compat Modes */
-    src: url("fonts/AvenirLTStd-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-         url("fonts/AvenirLTStd-Light.woff") format("woff"), /* Modern Browsers */
-         url("fonts/AvenirLTStd-Light.ttf")  format("truetype"), /* Safari, Android, iOS */
-         url("fonts/AvenirLTStd-Light.svg#fonts/AvenirLTStd-Light") format("svg"); /* Legacy iOS */
-         font-weight: 100;
-         font-style: normal;
+    src: url("fonts/AvenirLTStd-Light.eot");
+    src: url("fonts/AvenirLTStd-Light.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirLTStd-Light.woff") format("woff"), url("fonts/AvenirLTStd-Light.ttf") format("truetype"), url("fonts/AvenirLTStd-Light.svg#fonts/AvenirLTStd-Light") format("svg");
+    font-weight: 100;
+    font-style: normal;
 }
