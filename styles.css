@@ -4,7 +4,7 @@ body {
 }
 
 body {
-    font-family: "avenir";
+    font-family: "avenir", Arial, Helvetica, sans-serif;
     color: #fff;
     background-color: #001021;
     margin: 0;
@@ -13,7 +13,7 @@ body {
 h1 {
     font-size: min(calc(1.85vw + 1.85vh + 0.95vmin), 3em);
     text-align: center;
-    font-weight: 270;
+    font-weight: 300;
 }
 
 h2 {
@@ -26,7 +26,7 @@ h2 {
 h3 {
     font-size: min(calc(1.25vw + 1.25vh + 0.60vmin), 2.25em);
     text-align: center;
-    font-weight: 130;
+    font-weight: 100;
 }
 
 #can {
@@ -40,13 +40,11 @@ h3 {
     padding-top: 0;
     margin-top: 0;
     margin-bottom: 0;
-    margin-top: 0;
     text-align: center;
 }
 
 p {
     font-size: min(calc(1.15vw + 1.15vh + 0.5vmin), 1.5em);
-    text-align: center;
     text-align: left;
     line-height: 160%;
     width: auto;
